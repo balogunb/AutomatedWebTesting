@@ -1,0 +1,3 @@
+# Ignore chromium files and folder 
+
+node_modules/puppeteer/.local-chromium/
