@@ -51,6 +51,32 @@ async function run(){
 
             let thePath = 'WRServiceIMGs/clickedPage' + 0 +'.png';
              await page.screenshot({path: thePath, fullPage: true});
+
+
+
+
+
+
+             await page.click('button[value="milestones"]');
+             delay(3000);
+             await page.screenshot({path: 'WRServiceIMGs/milestonesTab.png', fullPage: true});
+
+             await page.click('button[value="documents"]');
+             delay(3000);
+             await page.screenshot({path: 'WRServiceIMGs/documentsTab.png', fullPage: true});
+
+
+
+             /** Fill in fields then take screenshot**/
+               await page.waitFor('input[name=email]');
+               await page.waitFor('input[name=password]');
+               await delay(1000);
+               await page.$eval('input[name=email]', el => el.value = 'balogun.basit@yahoo.com');
+               await delay(1000);
+               await page.$eval('input[name=password]', el => el.value = 'Wahabmustapha1');
+               await delay(1000);
+               await page.screenshot({path: 'WRServiceIMGs/logindetails.png', fullPage: true});
+
           //       delay(1000);
 
           // let  button = await page.evaluate(() => {
