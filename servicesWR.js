@@ -45,7 +45,6 @@ async function run(){
               }
 
               items[2].getElementsByTagName("button")[0].click();
-              //document.getElementsByClassName("catalogItemCta")[1].getElementsByTagName("button")[0]);
               return results.length;
           });
 
