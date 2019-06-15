@@ -32,7 +32,7 @@ async function run(){
   await delay(1000);
   await page.$eval('input[name=email]', el => el.value = 'balogun.basit@yahoo.com');
   await delay(1000);
-  await page.$eval('input[name=pass]', el => el.value = 'Wahabmustapha1');
+  await page.$eval('input[name=pass]', el => el.value = 'XXXXXX');
   await page.screenshot({path: 'logindetails.png'});
 
 

@@ -22,7 +22,7 @@ await page.goto("https://dev.workrails.com/login")
   await page.waitFor('input[name=email]');
   await page.waitFor('input[name=password]');
   await page.$eval('input[name=email]', el => el.value = 'balogun.basit@yahoo.com');
-  await page.$eval('input[name=password]', el => el.value = 'Adebowale2010!');
+  await page.$eval('input[name=password]', el => el.value = 'XXXXX');
   await page.screenshot({path: 'WorkrailsSC/logindetails.png'});
 
 

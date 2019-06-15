@@ -73,7 +73,7 @@ async function run(){
                await delay(1000);
                await page.$eval('input[name=email]', el => el.value = 'balogun.basit@yahoo.com');
                await delay(1000);
-               await page.$eval('input[name=password]', el => el.value = 'Wahabmustapha1');
+               await page.$eval('input[name=password]', el => el.value = 'XXX');
                await delay(1000);
                await page.screenshot({path: 'WRServiceIMGs/logindetails.png', fullPage: true});
 
