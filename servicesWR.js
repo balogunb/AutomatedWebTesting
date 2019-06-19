@@ -35,6 +35,7 @@ async function run(){
 //change page.evaluate to page.evaluateHandle because it returs aJSHandle promise instead of a serialized number
 //Take a look at page.$$(selector) method
 
+
       let  button = await page.evaluate(() => {
               let results = [];
               let items = document.getElementsByClassName("catalogItemCta");
