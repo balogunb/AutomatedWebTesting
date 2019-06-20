@@ -27,7 +27,7 @@ await page.goto("https://dev.workrails.com/login")
 
 
   /** Click login and take a screenshot of the new page **/
-  await page.click('input[type="submit"]');
+  await page.click('button[type="submit"]');
   await page.screenshot({path: 'WorkrailsSC/loggedin.png'});
 
 

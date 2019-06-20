@@ -1,9 +1,7 @@
+
 const puppeteer = require('puppeteer')
 
-// const url = process.argv[2];
-// if(!url){
-//   throw "Please provide a URL as the first argument";
-// }
+
 
 //time delay function
   function delay(timeout) {
