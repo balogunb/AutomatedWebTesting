@@ -19,20 +19,20 @@ async function run(){
 
 
 /**Go to website and take screenshot  **/
-  await page.goto("https://champion.workrails.com/");
+  await page.goto("https://erwin.workrails.com/");
   await delay(3000);//used instead of both network idles because page loads too slowly
   await page.screenshot({path: 'WRServiceIMGs/catalogPage.png', fullPage: true});
 
 
 
-//
-// let catalogContainer = await page.evaluateHandle(() =>{
-//   return document.getElementsByClassName("catalogListViewItems")[0];
-// });
 
-//let clickables = await catalogContainer.asElement().$$('button');//contains all clickable buttons in the catalog catalogContainer
+let catalogContainer = await page.evaluateHandle(() =>{
+  return document.getElementsByClassName("catalogListViewItems")[0];
+});
 
-//console.log(clickables.length);
+let clickables = await catalogContainer.asElement().$$('button');//contains all clickable buttons in the catalog catalogContainer
+
+console.log(clickables.length);
 
 
 
