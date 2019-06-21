@@ -1,0 +1,21 @@
+# A list of updates that would make workrails catalogs easier to test - Basit
+
+1) https:/ /services.workrails.com/ - All buttons with text "Learn more" on the main page would benefit from having unique id's though for this website
+  it is not really necessary since there are no conflicting buttons in the catalogListViewItems div tag
+
+2) https://champion.workrails.com , https://erwin.workrails.com/ , https://greenhouse.workrails.com/ , https://liveperson.workrails.com/ ,- All buttons with text "Learn more" on the main page would benefit from having unique id's because there are two
+  buttons in each catalogItem contained in the catalogListViewItems div tag. I would also look into removing the additional button under
+  class "sowBuilder" in each catalog item because it does not seem to be accessible on the web page since the whole catalog itself is a hyperlink. This issue
+  can also be handled by removing the button with class name "added" from the list of all returned buttons in the puppeteer script since the additional button
+  in each catalog item has a class name.
+
+3) https://gainsight.workrails.com/ , https://kustomer.workrails.com/ , https://confluent.workrails.com/ - Cant access catalogs without login
+
+4) https://newsela.workrails.com - Can't access catalogs without login and this page has a different layout. The link redirects to a newsela hosted page in contrast to others websites which are
+  workrails pages.
+
+5) https://ptc.workrails.com/ - This page would require a different script to test because it has different tags. there is no need to id buttons here because the
+  "Learn More" buttons in the catalogs have a class which seperates them from other types of buttons
+
+6) https://veeva.workrails.com - This page is also different from other pages in terms of the layout. It does not contain the standard "Learn More" button and instead contains
+  a get started button and each button contains a different class name. Might benefit from having same class name or id's that make it easier to test.
