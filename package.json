@@ -1,0 +1,24 @@
+{
+  "name": "puppeteerdemo",
+  "version": "1.0.0",
+  "description": "puppeteer API - https://pptr.dev/#?product=Puppeteer&version=v1.17.0&show=api-pageevaluatepagefunction-args\r                 https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagecontent",
+  "main": "default-autoTestWR.js",
+  "dependencies": {
+    "puppeteer": "^1.18.1",
+    "puppeteer-cluster": "^0.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "run default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balogunb/AutomatedWebTesting.git"
+  },
+  "author": "Basit Balogun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balogunb/AutomatedWebTesting/issues"
+  },
+  "homepage": "https://github.com/balogunb/AutomatedWebTesting#readme"
+}

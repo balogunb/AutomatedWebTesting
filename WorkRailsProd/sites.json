@@ -1,0 +1,84 @@
+{
+
+  "websites": [
+  {
+    "sitename": "Champion_Catalog",
+    "link": "https://champion.catalogs.dev.workrails.com"
+  }, {
+    "sitename": "championWR",
+    "link": "https://champion.workrails.com"
+  }, {
+    "sitename": "confluent_Catalog",
+    "link": "https://confluent.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "confluentWR",
+    "link": "https://confluent.workrails.com/"
+  }, {
+    "sitename": "Erwin_Catalog",
+    "link": "https://erwin.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "ErwinWR",
+    "link": "https://erwin.workrails.com/"
+  }, {
+    "sitename": "gainsight_catalog",
+    "link": "https://gainsight.catalogs.dev.workrails.com/	"
+  }, {
+    "sitename": "gainsightWR",
+    "link": "https://gainsight.workrails.com/"
+  }, {
+    "sitename": "greenhouse_catalog",
+    "link": "https://greenhouse.catalogs.dev.workrails.com/	"
+  }, {
+    "sitename": "greenhouseWR",
+    "link": "https://greenhouse.workrails.com/"
+  }, {
+    "sitename": "kustomer_dev_catalog",
+    "link": "https://kustomer.dev.catalogs.workrails.com/	"
+  }, {
+    "sitename": "kustomer_catalog",
+    "link": "https://kustomer.workrails.com/ "
+  }, {
+    "sitename": "liveperson_catalog",
+    "link": "https://liveperson.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "livepersonWR",
+    "link": "https://liveperson.workrails.com/"
+  }, {
+    "sitename": "newsela_catalogs",
+    "link": "https://newsela.catalogs.dev.workrails.com/	"
+  }, {
+    "sitename": "newselaWR",
+    "link": "https://newsela.workrails.com/"
+  }, {
+    "sitename": "ptc_catalog",
+    "link": "https://ptc.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "ptcWR",
+    "link": "https://ptc.workrails.com/"
+  }, {
+    "sitename": "veeva_catalog",
+    "link": "https://veeva.catalogs.dev.workrails.com/ "
+  }, {
+    "sitename": "veevaWR",
+    "link": "https://veeva.workrails.com/"
+  }, {
+    "sitename": "services_catalog",
+    "link": "https://services.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "servicesWR",
+    "link": "https://services.workrails.com/"
+  }, {
+    "sitename": "testcatalog_catalog",
+    "link": "https://testcatalog.catalogs.dev.workrails.com/"
+  }, {
+    "sitename": "ceridian_catalog",
+    "link": "http://ceridian.catalogs.dev.workrails.com"
+  }, {
+    "sitename": "namely_catalog",
+    "link": "https://namely.catalogs.dev.workrails.com/#/"
+  }, {
+    "sitename": "autodesk_catalog",
+    "link": "https://autodesk.catalogs.dev.workrails.com/#/"
+  }
+  ]
+}
