@@ -94,56 +94,57 @@ const sites = [
   }
 ];
 
-async function getImageMobile(obj) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
-  const iPhone = puppeteer.devices['iPhone X'];
-  await page.emulate(iPhone);
-
-  await page.goto(obj.link);
-  delay(3000);
-
-  var pathname = "WebPageIMG/" + obj.sitename + "_mobile"
-  await page.screenshot({path: pathname, fullPage: true});
-  browser.close();
-  delay(1000)
-}
-
-async function getImageDesktop(obj) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
-  page.emulate({
-    name: 'Desktop 1920x1080',
-    viewport: {
-      width: 1920,
-      height: 1080
-    }
-  });
-
-  await page.goto(obj.link);
-
-  delay(3000)
-
-  var pathname = "WebPageIMG/" + obj.sitename + "_desktop"
-  await page.screenshot({path: pathname, fullPage: true});
-  browser.close();
-  delay(1000)
-}
-
-async function run() {
-
-  sites.forEach(function(site) {
-    getImageDesktop(site);
-    //  getImageMobile(site);
-  });
-
-}
-
-//run();
+// async function getImageMobile(obj) {
+//   const browser = await puppeteer.launch();
+//   const page = await browser.newPage();
+//
+//   const iPhone = puppeteer.devices['iPhone X'];
+//   await page.emulate(iPhone);
+//
+//   await page.goto(obj.link);
+//   delay(3000);
+//
+//   var pathname = "WebPageIMG/" + obj.sitename + "_mobile"
+//   await page.screenshot({path: pathname, fullPage: true});
+//   browser.close();
+//   delay(1000)
+// }
+//
+// async function getImageDesktop(obj) {
+//   const browser = await puppeteer.launch();
+//   const page = await browser.newPage();
+//
+//   page.emulate({
+//     name: 'Desktop 1920x1080',
+//     viewport: {
+//       width: 1920,
+//       height: 1080
+//     }
+//   });
+//
+//   await page.goto(obj.link);
+//
+//   delay(3000)
+//
+//   var pathname = "WebPageIMG/" + obj.sitename + "_desktop"
+//   await page.screenshot({path: pathname, fullPage: true});
+//   browser.close();
+//   delay(1000)
+// }
+//
+// async function run() {
+//
+//   sites.forEach(function(site) {
+//     getImageDesktop(site);
+//     //  getImageMobile(site);
+//   });
+//
+// }
+//
+// //run();
 
 (async () => {
+
 
   //if there are errors when running reduce the max number of concurrency
   const cluster = await Cluster.launch({concurrency: Cluster.CONCURRENCY_CONTEXT, maxConcurrency: 3, monitor: true});
@@ -157,6 +158,8 @@ async function run() {
         height: 1080
       }
     });
+
+
 
     await page.goto(url);
     const path = "WebPageIMG/Desktop/" + url.replace(/[^a-zA-Z]/g, '_') + 'Desktop.png';
