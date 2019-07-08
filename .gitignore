@@ -1,3 +1,6 @@
-# Ignore chromium files and folder
+#ignore node modules
 
 node_modules/
+
+#ignore pictures
+.png
